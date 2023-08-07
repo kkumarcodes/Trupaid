@@ -1,11 +1,7 @@
 import React from 'react';
-import MaskedInput from 'react-text-mask';
 import NumberFormat from 'react-number-format';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
 import TextField from '@material-ui/core/TextField';
-import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
 import RefreshIcon from '@material-ui/icons/Refresh';
 

@@ -10,17 +10,14 @@
     "@material-ui/lab": "^4.0.0-alpha.58",
     "@material-ui/pickers": "^3.3.10",
     "@reduxjs/toolkit": "^1.5.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "^17.0.9",
     "@types/react-redux": "^7.1.7",
     "@types/react-router-dom": "^5.1.7",
-    "@types/react-swipeable-views": "^0.13.0",
-    "@types/react-swipeable-views-utils": "^0.13.2",
+    "@types/react-swipeable-views": "^0.13.2",
+    "@types/react-swipeable-views-utils": "^0.13.4",
     "axios": "^0.21.1",
     "date-fns": "^2.23.0",
     "luxon": "^2.0.2",
@@ -31,8 +28,9 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "react-swipeable-views": "^0.13.9",
+    "react-swipeable-views": "^0.14.0",
     "react-text-mask": "^5.4.3",
+    "storybook": "6.5.14",
     "typescript": "~4.1.5"
   },
   "scripts": {
@@ -42,8 +40,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-    "storybook": "start-storybook -p 6006 -s ./",
-    "build-storybook": "build-storybook -s ./"
+    "storybook": "start-storybook -p 6006 -s ./"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -72,28 +69,24 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.6",
-    "@storybook/addon-essentials": "^6.3.6",
-    "@storybook/addon-links": "^6.3.6",
-    "@storybook/node-logger": "^6.3.6",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.6",
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-essentials": "6.5.9",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/node-logger": "6.5.16",
+    "@storybook/preset-create-react-app": "^7.2.1",
+    "@storybook/react": "6.5.16",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "@types/luxon": "^2.0.0",
     "@types/react-text-mask": "^5.4.9",
     "@types/storybook-react-router": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.6",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^2.3.0",
     "storybook-react-router": "^1.0.8"
+  },
+  "resolutions": {
+    "@types/react": "17.0.43"
   }
 }

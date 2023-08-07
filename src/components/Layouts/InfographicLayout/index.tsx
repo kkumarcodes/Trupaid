@@ -149,7 +149,7 @@ const InfographicLayout: FC<Props> = (props) => {
                     }
                     alignItems="center"
                   >
-                    <AutoPlaySwipeableViews
+                    {/* <AutoPlaySwipeableViews
                       className={classes.swippable}
                       enableMouseEvents
                       index={swipeIndex}
@@ -158,7 +158,7 @@ const InfographicLayout: FC<Props> = (props) => {
                       {infographicSlides.map((slideProps: InfographicProps) => (
                         <Infographic key={slideProps.title} {...slideProps} />
                       ))}
-                    </AutoPlaySwipeableViews>
+                    </AutoPlaySwipeableViews> */}
                     {showDot && (
                       <MobileStepper
                         variant="dots"
