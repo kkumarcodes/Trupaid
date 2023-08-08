@@ -1,11 +1,10 @@
-import React, { FC, ReactFragment, ReactNode, useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid, useMediaQuery, MobileStepper } from "@material-ui/core";
 
 import Infographic, { InfographicProps } from "./Inforgraphic";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import Typography from "components/Typography";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -149,7 +148,7 @@ const InfographicLayout: FC<Props> = (props) => {
                     }
                     alignItems="center"
                   >
-                    {/* <AutoPlaySwipeableViews
+                    <AutoPlaySwipeableViews
                       className={classes.swippable}
                       enableMouseEvents
                       index={swipeIndex}
@@ -158,7 +157,7 @@ const InfographicLayout: FC<Props> = (props) => {
                       {infographicSlides.map((slideProps: InfographicProps) => (
                         <Infographic key={slideProps.title} {...slideProps} />
                       ))}
-                    </AutoPlaySwipeableViews> */}
+                    </AutoPlaySwipeableViews>
                     {showDot && (
                       <MobileStepper
                         variant="dots"
