@@ -16,7 +16,7 @@ import cartImg from 'assets/images/branding/cart.png';
 
 const infographicSlides = [{
     imgSrc: onboardingImg,
-    title: 'Welcome to Well Paid',
+    title: 'Welcome to TruPaid',
     info: 'Split bills like rent and electric without effort or reminders.'
   }, {
     imgSrc: creditCardImg,
@@ -25,7 +25,7 @@ const infographicSlides = [{
   }, {
     imgSrc: moneyChipImg,
     title: 'Effortless Planning',
-    info: 'Build an effortless and tailored plan for your monthly finances with help from Well Paid\'s proprietary algorithm.'
+    info: 'Build an effortless and tailored plan for your monthly finances with help from TruPaid\'s proprietary algorithm.'
   }, {
     imgSrc: cartImg,
     title: 'Catered Deals',

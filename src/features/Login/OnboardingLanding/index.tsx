@@ -23,7 +23,7 @@ import GoogleIcon from 'assets/images/others/googleicon.png';
 const infographicSlides = [
   {
     imgSrc: onboardingImg,
-    title: 'Welcome to Well Paid',
+    title: 'Welcome to TruPaid',
     info: 'Split bills like rent and electric without effort or reminders.',
   },
   {
@@ -34,7 +34,7 @@ const infographicSlides = [
   {
     imgSrc: moneyChipImg,
     title: 'Effortless Planning',
-    info: "Build an effortless and tailored plan for your monthly finances with help from Well Paid's proprietary algorithm.",
+    info: "Build an effortless and tailored plan for your monthly finances with help from TruPaid's proprietary algorithm.",
   },
   {
     imgSrc: cartImg,
@@ -188,7 +188,7 @@ const MobileTitleContent: FunctionComponent = () => {
         <Typography className={classes.titlePart1}>Welcome to</Typography>
       </Grid>
       <Grid item container justify="center">
-        <Typography className={classes.titlePart2}>Well Paid!</Typography>
+        <Typography className={classes.titlePart2}>TruPaid!</Typography>
       </Grid>
     </>
   );
@@ -230,7 +230,7 @@ const OnBoardingLanding: FunctionComponent = () => {
         {matchesXsDown ? null : (
           <>
             <Grid item className={classes.onBoardingTitleWrapper}>
-              <Typography variant="h2">Welcome to Well Paid!</Typography>
+              <Typography variant="h2">Welcome to TruPaid!</Typography>
             </Grid>
             <Grid item>
               <Typography>
@@ -340,7 +340,7 @@ const OnBoardingLanding: FunctionComponent = () => {
         {matchesSmDown ? null : (
           <Grid item className={classes.noteWrapper}>
             <Typography>
-              Please Note: Well Paid does not share your information with Apple
+              Please Note: TruPaid does not share your information with Apple
               or Google.
             </Typography>
           </Grid>
