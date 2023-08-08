@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p align="center">
+  <h1 align="center">TruPaid</h1>
+</p>
+
+<p align="center">
+<img alt="TruPaid" width="950" src="https://github.com/kkumarcodes/Trupaid/blob/main/screenshots/ss1.png"/>
+</p>
+
+## Introduction
+
+TruPaid is a automation for sharing. Roommates, tenants, landlords, and couples can share track or split bills together.
 
 ## Available Scripts
 
@@ -85,6 +97,4 @@ src/
   https://github.com/axios/axios
 - Visual tools for seeing and interacting with our custom component libraries.
   https://github.com/storybookjs/storybook
-- Sentry for frontend error logging
-  https://docs.sentry.io/platforms/javascript/guides/react/
 
