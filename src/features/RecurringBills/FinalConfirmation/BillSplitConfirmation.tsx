@@ -135,7 +135,7 @@ const BillSplitConfirmation: FC<Props> = (props) => {
                 onClick={() => handleClick('yes')}
                 elevation={3}
               >
-                <div component="div" className={classes.confirmIconWrapper}>
+                <div className={classes.confirmIconWrapper}>
                   <ConfirmationYesIcon />
                 </div>
                 <Typography variant="smallText2">Yes</Typography>
@@ -151,7 +151,7 @@ const BillSplitConfirmation: FC<Props> = (props) => {
                 }
                 onClick={() => handleClick('no')}
               >
-                <div component="div" className={classes.confirmIconWrapper}>
+                <div className={classes.confirmIconWrapper}>
                   <ConfirmationNoIcon />
                 </div>
                 <Typography variant="smallText2">No</Typography>
