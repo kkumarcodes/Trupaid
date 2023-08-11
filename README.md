@@ -7,6 +7,9 @@
 <p align="center">
 <img alt="TruPaid" width="950" src="https://github.com/kkumarcodes/Trupaid/blob/main/screenshots/ss1.png"/>
 </p>
+<p align="center">
+<img alt="TruPaid" width="950" src="https://github.com/kkumarcodes/Trupaid/blob/main/screenshots/ss2.png"/>
+</p>
 
 ## Introduction
 
