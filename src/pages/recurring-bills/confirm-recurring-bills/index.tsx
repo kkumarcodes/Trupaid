@@ -62,7 +62,11 @@ const useStyles = makeStyles((theme) => ({
     height: '20px',
   },
   recurringImg: {
-    width: '100%',
+    position: 'absolute',
+    opacity: 0.2,
+    right: 0,
+    bottom: 0,
+    width: '600px',
   },
   recurringLeftSection: {
     display: 'flex',

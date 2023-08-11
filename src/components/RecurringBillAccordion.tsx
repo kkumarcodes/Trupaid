@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     border: 'none',
     borderRadius: 0,
     boxShadow: 'none',
-    backgroundColor: '#fafafa',
+    backgroundColor: 'transparent',
   },
   avartarWrapper: {
     width: '40px',
