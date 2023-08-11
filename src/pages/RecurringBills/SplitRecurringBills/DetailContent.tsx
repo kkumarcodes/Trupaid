@@ -31,7 +31,7 @@ import {
 import { addNewConnection } from '../../../types/request/addNewConnection';
 
 import { useSelector } from 'react-redux';
-import { useAppDispatch } from 'hooks/store';
+import { useAppDispatch } from '../../../hooks/store';
 
 const useStyles = makeStyles(() => ({
   accordionDetailContainer: {

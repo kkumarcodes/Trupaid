@@ -23,7 +23,7 @@ import creditCardImg from '../../../assets/images/branding/creditCard.png';
 import moneyChipImg from '../../../assets/images/branding/moneyChip.png';
 import cartImg from '../../../assets/images/branding/cart.png';
 
-import { useAppDispatch } from 'hooks/store';
+import { useAppDispatch } from '../../../hooks/store';
 
 const infographicSlides = [
   {
