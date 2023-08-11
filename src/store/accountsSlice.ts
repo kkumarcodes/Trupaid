@@ -4,7 +4,7 @@ import {
   AccountResponse,
   PrimaryAccount,
 } from 'types/entities/accounts';
-import API from 'api';
+import API from "../api";
 
 import { RootState } from '.';
 
