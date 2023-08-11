@@ -2,7 +2,6 @@ import React from "react";
 import { Provider } from 'react-redux';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
-import Auth0Provider from './components/Auth0Provider';
 import { store } from "./store";
 import AppTheme from './assets/theme';
 import { silentAuth } from "./utils/auth";
@@ -45,11 +44,9 @@ const WrapProvider = ({ element }) => {
         <SessionCheck>
           <Provider store={store}>
             <BrowserRouter>
-              <Auth0Provider>
-                <ThemeProvider theme={AppTheme}>
-                  {element}
-                </ThemeProvider>
-              </Auth0Provider>
+              <ThemeProvider theme={AppTheme}>
+                {element}
+              </ThemeProvider>
             </BrowserRouter>
           </Provider>
         </SessionCheck>
