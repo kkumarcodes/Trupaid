@@ -10,7 +10,7 @@ import {
   getTransactionSeries,
   transactionSeries,
 } from '../../../store/transactionSeriesSlice';
-import { useAppDispatch } from 'hooks/store';
+import { useAppDispatch } from '../../../hooks/store';
 import { DateTime } from 'luxon';
 
 import RecurringBillLogo from '../../../assets/images/others/recurringBillLogo.svg';

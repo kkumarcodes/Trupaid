@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 
 import SocialButton, { Props } from './SocialButton';
 
-import GoogleIcon from 'assets/images/others/googleicon.png';
+import GoogleIcon from '../../../assets/images/others/googleicon.png';
 
 export default {
   title: 'Components/SocialButton',

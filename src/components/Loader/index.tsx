@@ -1,5 +1,6 @@
-import React from "react";
-function Loader() {
+import React, { FunctionComponent } from 'react';
+
+const Loader: FunctionComponent = () => {
   return (
     <div className="dialog-content">
       <div className="loading-dialog-content">

@@ -1,4 +1,4 @@
-import API from 'api';
+import API from '../../../api';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import Banner from '../../../components/Banner';
