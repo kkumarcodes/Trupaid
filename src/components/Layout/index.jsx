@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import SSRProvider from 'react-bootstrap/SSRProvider';
-// import { useDispatch } from "react-redux";
-// import { getUserProfile } from "../../store/actions";
 import Navigation from "../Navigation";
 import Footer from "../Footer";
 import AlertBanner from "../AlertBanner";

@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 
 import { useTheme, makeStyles } from '@material-ui/core/styles';
-import customTheme from 'assets/theme/breakpoints';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Container as MuiContainer, Typography } from '@material-ui/core';
 

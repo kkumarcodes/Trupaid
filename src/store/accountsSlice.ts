@@ -3,7 +3,7 @@ import {
   Account,
   AccountResponse,
   PrimaryAccount,
-} from 'types/entities/accounts';
+} from '../types/entities/accounts';
 import API from "../api";
 
 import { RootState } from '.';

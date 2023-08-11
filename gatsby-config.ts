@@ -1,7 +1,6 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `TruPaid`,
     description: `bill split platform`,
@@ -16,3 +15,4 @@ module.exports = {
     "gatsby-plugin-sharp",
   ],
 };
+export default config

@@ -4,32 +4,32 @@ import { Grid } from '@material-ui/core';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import { useAppDispatch } from 'hooks/store';
+import { useAppDispatch } from '../../../hooks/store';
 
-import Banner from 'components/Banner';
-import OnBoardNavbar from 'components/OnBoardingNavbar';
+import Banner from '../../../components/Banner';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
 import BillSplitConfirmation from './BillSplitConfirmation';
-import LeftContent from 'components/BillSplitAccordion/LeftContent';
+import LeftContent from '../../../components/BillSplitAccordion/LeftContent';
 
-import Details from 'components/BillSplitAccordion/Details';
-import Link from 'components/Link';
+import Details from '../../../components/BillSplitAccordion/Details';
+import Link from '../../../components/Link';
 
 import { useTheme, useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import Button from 'components/Button';
-import Typography from 'components/Typography';
+import Button from '../../../components/Button';
+import Typography from '../../../components/Typography';
 
 // use redux-toolkit part
 import { connect, useSelector } from 'react-redux';
 import { getConnections, Connections } from 'store/connectionSlice';
-import { transactionSeries } from 'store/transactionSeriesSlice';
+import { transactionSeries } from '../../../store/transactionSeriesSlice';
 
-import avatarImg from 'assets/images/profile/avatar.png';
-import BillSplitAccordion from 'components/BillSplitAccordion';
+import avatarImg from '../../../assets/images/profile/avatar.png';
+import BillSplitAccordion from '../../../components/BillSplitAccordion';
 
-import Container from 'components/Container';
-import user from 'api/user';
+import Container from '../../../components/Container';
+import user from '../../../api/user';
 
 const useStyles = makeStyles((theme) => ({
   content: {

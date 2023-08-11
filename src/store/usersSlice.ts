@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { UserResponse, User } from "types/entities/user";
-import { CreateUser } from "types/request/user";
+import { UserResponse, User } from "../types/entities/user";
+import { CreateUser } from "../types/request/user";
 import API from "../api";
 
 import { RootState } from ".";

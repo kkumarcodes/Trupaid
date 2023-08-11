@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import Checkbox, { Props } from './index'
 
 export default {
-  title: 'Components/Checkbox',
+  title: '../Checkbox',
   component: Checkbox,
 } as Meta;
 

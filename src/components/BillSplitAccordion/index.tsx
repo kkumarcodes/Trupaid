@@ -6,9 +6,9 @@ import {
   AccordionDetails as MuiAccordionDetails,
   FormControlLabel,
 } from '@material-ui/core';
-import CheckBox from 'components/Checkbox';
-import Typography from 'components/Typography';
-import { ExpandMoreIcon, ExpandLessIcon } from 'components/Icons';
+import CheckBox from '../Checkbox';
+import Typography from '../Typography';
+import { ExpandMoreIcon, ExpandLessIcon } from '../Icons';
 import { Grid, Box } from '@material-ui/core';
 import { useState } from 'react';
 

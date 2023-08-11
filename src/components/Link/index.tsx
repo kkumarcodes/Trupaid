@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link as MuiLink, LinkProps } from '@material-ui/core';
-import { MappedPaletteOptions } from 'types/theme/createPalette';
+import { MappedPaletteOptions } from '../../types/theme/createPalette';
 
 export interface Props extends Omit<LinkProps, 'color'> {
   color?: MappedPaletteOptions;

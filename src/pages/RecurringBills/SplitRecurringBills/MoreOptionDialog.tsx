@@ -5,7 +5,7 @@ import {
   withStyles,
   WithStyles,
 } from '@material-ui/core/styles';
-import Button from 'components/Button';
+import Button from '../../../components/Button';
 import { Dialog as MuiDialog } from '@material-ui/core';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -16,18 +16,18 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/styles';
 import Divider from '@material-ui/core/Divider';
 
-import Typography from 'components/Typography';
-import WellPaidSelect from 'components/Select';
-import Link from 'components/Link';
+import Typography from '../../../components/Typography';
+import WellPaidSelect from '../../../components/Select';
+import Link from '../../../components/Link';
 import FormattedInputs from '../ConfirmRecurringBills/FormattedInput';
 import PercentageInput from './PercentageInput';
-import Checkbox from 'components/Checkbox';
-import WellPaidDatePicker from 'components/DatePicker';
+import Checkbox from '../../../components/Checkbox';
+import WellPaidDatePicker from '../../../components/DatePicker';
 
-import { getAccounts, Accounts } from 'store/accountsSlice';
-import { getSplitOptions, SplitOptions } from 'store/splitOptionSlice';
+import { getAccounts, Accounts } from '../../../store/accountsSlice';
+import { getSplitOptions, SplitOptions } from '../../../store/splitOptionSlice';
 import { useSelector } from 'react-redux';
-import { useAppDispatch } from 'hooks/store';
+import { useAppDispatch } from '../../../hooks/store';
 
 const useStyles = makeStyles(() => ({
   customDialogWidth: {

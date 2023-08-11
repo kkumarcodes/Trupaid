@@ -1,29 +1,27 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import OnBoardNavbar from 'components/OnBoardingNavbar';
-import InfographicLayout from 'components/Layouts/InfographicLayout';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
 import BankConfirmation from './BankConfirmation';
 
-import Button from 'components/Button';
-import Typography from 'components/Typography';
+import Button from '../../../components/Button';
+import Typography from '../../../components/Typography';
 
-import API from 'api';
-import { useAppDispatch } from 'hooks/store';
+import API from '../../../api';
+import { useAppDispatch } from '../../../hooks/store';
 import { connect, useSelector } from 'react-redux';
-import { Accounts, getStatus, getAccounts } from 'store/accountsSlice';
-import { getConnections, Connections } from 'store/connectionSlice';
+import { Accounts, getStatus, getAccounts } from '../../../store/accountsSlice';
+import { getConnections, Connections } from '../../../store/connectionSlice';
 
-import bankImg from 'assets/images/branding/bankImg.png';
-import bankAvartar from 'assets/images/profile/bank_avatar.png';
-import Banner from 'components/Banner';
-import Container from 'components/Container';
+import bankImg from '../../../assets/images/branding/bankImg.png';
+import bankAvartar from '../../../assets/images/profile/bank_avatar.png';
+import Banner from '../../../components/Banner';
+import Container from '../../../components/Container';
 
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { useTheme, useMediaQuery } from '@material-ui/core';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { useAuth0 } from '@auth0/auth0-react';
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -100,7 +98,6 @@ const SelectPrimaryBank: FunctionComponent = () => {
   const [selectedAccount, setSelectAccount] = useState('');
   const [error, setError] = useState('');
   const [submitLoading, setSubmitLoading] = useState(false);
-  const { user } = useAuth0();
   const history = useHistory();
   const dispatch = useAppDispatch();
   const accountStatus = useSelector(getStatus);

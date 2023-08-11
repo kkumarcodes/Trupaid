@@ -1,32 +1,27 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
 import { useSelector } from 'react-redux';
 import { Grid } from '@material-ui/core';
 
-import { createUser, getStatus } from 'store/usersSlice';
-import Link from 'components/Link';
+import { createUser, getStatus } from '../../../store/usersSlice';
+import Link from '../../../components/Link';
 
-import Banner from 'components/Banner';
-import OnBoardNavbar from 'components/OnBoardingNavbar';
-import Input from 'components/Input';
-import Checkbox from 'components/Checkbox';
-import SelectState from 'components/SelectState';
+import Banner from '../../../components/Banner';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
+import Input from '../../../components/Input';
+import Checkbox from '../../../components/Checkbox';
+import SelectState from '../../../components/SelectState';
 
-import { CreateUser } from 'types/request/user';
+import { CreateUser } from '../../../types/request/user';
 import { useTheme, useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from 'components/Button';
-import Typography from 'components/Typography';
-import Container from 'components/Container';
+import Button from '../../../components/Button';
+import Typography from '../../../components/Typography';
+import Container from '../../../components/Container';
 
-import InfographicLayout from 'components/Layouts/InfographicLayout';
-
-import onboardingImg from 'assets/images/branding/onboarding.png';
-import creditCardImg from 'assets/images/branding/creditCard.png';
-import moneyChipImg from 'assets/images/branding/moneyChip.png';
-import cartImg from 'assets/images/branding/cart.png';
-
-import { useHistory } from 'react-router-dom';
+import onboardingImg from '../../../assets/images/branding/onboarding.png';
+import creditCardImg from '../../../assets/images/branding/creditCard.png';
+import moneyChipImg from '../../../assets/images/branding/moneyChip.png';
+import cartImg from '../../../assets/images/branding/cart.png';
 
 import { useAppDispatch } from 'hooks/store';
 
@@ -173,7 +168,6 @@ const initialForm: CreateUser = {
 
 const OnboardingRoutes: FunctionComponent = () => {
   const dispatch = useAppDispatch();
-  const { user = {}, logout } = useAuth0();
   const [error, setError] = useState(false);
   const classes = useStyles();
   const theme = useTheme();
@@ -239,12 +233,6 @@ const OnboardingRoutes: FunctionComponent = () => {
       setErrorMessage(error.message);
     }
   };
-
-  useEffect(() => {
-    if (user.sub) {
-      setForm((oldForm) => ({ ...oldForm, email: undefined }));
-    }
-  }, [user]);
 
   return (
     <Container>

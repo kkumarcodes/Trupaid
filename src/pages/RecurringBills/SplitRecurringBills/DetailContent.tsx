@@ -11,24 +11,24 @@ import { makeStyles } from '@material-ui/styles';
 import Divider from '@material-ui/core/Divider';
 
 // import Button from '@material-ui/core/Button';
-import Button from 'components/Button';
-import Link from 'components/Link';
+import Button from '../../../components/Button';
+import Link from '../../../components/Link';
 import MuiAutocomplete, {
   createFilterOptions,
 } from '@material-ui/lab/Autocomplete';
 import UserConnection from './UserConnection';
-import userAvatar from 'assets/images/profile/avatar.png';
+import userAvatar from '../../../assets/images/profile/avatar.png';
 import MoreOptionDialog from './MoreOptionDialog';
 import Grid from '@material-ui/core/Grid';
-import Typography from 'components/Typography';
-import Input from 'components/Input';
+import Typography from '../../../components/Typography';
+import Input from '../../../components/Input';
 
 import {
   getConnections,
   Connections,
   newConnection,
-} from 'store/connectionSlice';
-import { addNewConnection } from 'types/request/addNewConnection';
+} from '../../../store/connectionSlice';
+import { addNewConnection } from '../../../types/request/addNewConnection';
 
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'hooks/store';

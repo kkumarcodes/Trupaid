@@ -9,13 +9,13 @@ import { useSelector } from 'react-redux';
 import {
   getTransactionSeries,
   transactionSeries,
-} from 'store/transactionSeriesSlice';
+} from '../../../store/transactionSeriesSlice';
 import { useAppDispatch } from 'hooks/store';
 import { DateTime } from 'luxon';
 
-import RecurringBillLogo from 'assets/images/others/recurringBillLogo.svg';
-import RecurringBillRect1 from 'assets/images/others/recurringBillRect1.png';
-import RecurringBillRect3 from 'assets/images/others/recurringBillRect3.png';
+import RecurringBillLogo from '../../../assets/images/others/recurringBillLogo.svg';
+import RecurringBillRect1 from '../../../assets/images/others/recurringBillRect1.png';
+import RecurringBillRect3 from '../../../assets/images/others/recurringBillRect3.png';
 
 import CallSplitIcon from '@material-ui/icons/CallSplit';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
@@ -23,12 +23,12 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import OnBoardNavbar from 'components/OnBoardingNavbar';
-import Container from 'components/Container';
-import Typography from 'components/Typography';
-import CheckBox from 'components/Checkbox';
-import Link from 'components/Link';
-import Button from 'components/Button';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
+import Container from '../../../components/Container';
+import Typography from '../../../components/Typography';
+import CheckBox from '../../../components/Checkbox';
+import Link from '../../../components/Link';
+import Button from '../../../components/Button';
 import RecurringBillAccordion from './RecurringBillAccordion';
 import FormattedInputs from './FormattedInput';
 import { useHistory } from 'react-router-dom';

@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Typography from 'components/Typography';
-import { ConfirmationYesIcon, ConfirmationNoIcon } from 'components/Icons';
+import Typography from '../../../components/Typography';
+import { ConfirmationYesIcon, ConfirmationNoIcon } from '../../../components/Icons';
 import { Paper, Box, Grid, useMediaQuery } from '@material-ui/core';
 
 export interface Props {

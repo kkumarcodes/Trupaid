@@ -6,7 +6,7 @@ import {
   ButtonProps,
   CircularProgress,
 } from '@material-ui/core';
-import { MappedPaletteOptions } from 'types/theme/createPalette';
+import { MappedPaletteOptions } from '../../types/theme/createPalette';
 
 export interface Props
   extends Omit<ButtonProps, 'color' | 'variant' | 'disableElevation'> {

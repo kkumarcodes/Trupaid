@@ -1,24 +1,22 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import { useHistory } from 'react-router-dom';
 import { Grid, TextField, Box } from '@material-ui/core';
 
-import OnBoardNavbar from 'components/OnBoardingNavbar';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
 
 import { useTheme, useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from 'components/Button';
-import Typography from 'components/Typography';
-import SocialButton from 'features/Login/OnboardingLanding/SocialButton';
+import Button from '../../../components/Button';
+import Typography from '../../../components/Typography';
+import SocialButton from '../../../pages/Login/OnboardingLanding/SocialButton';
 
-import InfographicLayout from 'components/Layouts/InfographicLayout';
+import InfographicLayout from '../../../components/Layouts/InfographicLayout';
 
-import onboardingImg from 'assets/images/branding/onboarding.png';
-import creditCardImg from 'assets/images/branding/creditCard.png';
-import moneyChipImg from 'assets/images/branding/moneyChip.png';
-import cartImg from 'assets/images/branding/cart.png';
-import AppleIcon from 'assets/images/others/appleicon.png';
-import GoogleIcon from 'assets/images/others/googleicon.png';
+import onboardingImg from '../../../assets/images/branding/onboarding.png';
+import creditCardImg from '../../../assets/images/branding/creditCard.png';
+import moneyChipImg from '../../../assets/images/branding/moneyChip.png';
+import cartImg from '../../../assets/images/branding/cart.png';
+import AppleIcon from '../../../assets/images/others/appleicon.png';
+import GoogleIcon from '../../../assets/images/others/googleicon.png';
 
 const infographicSlides = [
   {
@@ -200,8 +198,6 @@ const OnBoardingLanding: FunctionComponent = () => {
   const matchesSmDown = useMediaQuery(theme.breakpoints.down('sm'));
   const matchesXsDown = useMediaQuery(theme.breakpoints.down('xs'));
 
-  const { loginWithRedirect, user = {}, logout } = useAuth0();
-
   const Content = (
     <Grid
       container
@@ -247,10 +243,7 @@ const OnBoardingLanding: FunctionComponent = () => {
               size="small"
               fullWidth={matchesSmDown ? true : false}
               onClick={() =>
-                loginWithRedirect({
-                  screen_hint: 'signup',
-                  redirectUri: `${window.location.origin}/redirect`,
-                })
+                {}
               }
             >
               Sign Up
@@ -262,9 +255,7 @@ const OnBoardingLanding: FunctionComponent = () => {
               color="slate"
               fullWidth={matchesSmDown ? true : false}
               onClick={() =>
-                loginWithRedirect({
-                  redirectUri: `${window.location.origin}/redirect`,
-                })
+                {}
               }
             >
               Log In
@@ -310,9 +301,7 @@ const OnBoardingLanding: FunctionComponent = () => {
                 buttonIcon={AppleIcon}
                 fullWidth={true}
                 onClick={() =>
-                  loginWithRedirect({
-                    redirectUri: `${window.location.origin}/redirect`,
-                  })
+                  {}
                 }
               />
             </Grid>
@@ -329,9 +318,7 @@ const OnBoardingLanding: FunctionComponent = () => {
                 buttonIcon={GoogleIcon}
                 fullWidth={true}
                 onClick={() =>
-                  loginWithRedirect({
-                    redirectUri: `${window.location.origin}/redirect`,
-                  })
+                  {}
                 }
               />
             </Grid>

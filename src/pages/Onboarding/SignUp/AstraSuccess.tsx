@@ -1,7 +1,7 @@
 import API from 'api';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
-import Banner from 'components/Banner';
+import Banner from '../../../components/Banner';
 
 export default function AstraSuccess() {
   const [error, setError] = useState('');

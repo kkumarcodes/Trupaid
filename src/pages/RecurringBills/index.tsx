@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import ConfirmRecurringBills from './ConfirmRecurringBills';
 import SplitRecurringBills from './SplitRecurringBills';
 import FinalConfirmation from './FinalConfirmation';
-import { transactionSeries } from 'store/transactionSeriesSlice';
+import { transactionSeries } from '../../store/transactionSeriesSlice';
 
 interface Props {}
 

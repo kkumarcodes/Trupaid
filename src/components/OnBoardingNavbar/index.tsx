@@ -8,7 +8,6 @@ import {
   OnBoardingLogoIcon2,
 } from '../Icons';
 import Typography from '../Typography';
-import Container from 'components/Container';
 
 export interface Props {
   title?: string;

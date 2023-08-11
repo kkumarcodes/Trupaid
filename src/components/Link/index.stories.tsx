@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import Link, { Props } from './index';
 
 export default {
-  title: 'Components/Link',
+  title: '../Link',
   component: Link,
 } as Meta;
 

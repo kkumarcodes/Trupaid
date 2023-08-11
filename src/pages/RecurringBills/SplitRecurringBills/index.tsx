@@ -6,16 +6,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { DateTime } from 'luxon';
 
-import Container from 'components/Container';
-import OnBoardNavbar from 'components/OnBoardingNavbar';
-import WellPaidAccordion from 'components/Accordion';
-import Typography from 'components/Typography';
+import Container from '../../../components/Container';
+import OnBoardNavbar from '../../../components/OnBoardingNavbar';
+import WellPaidAccordion from '../../../components/Accordion';
+import Typography from '../../../components/Typography';
 import LeftContent from './LeftContent';
 import RightContent from './RightContent';
 import DetailContent from './DetailContent';
-import Button from 'components/Button';
-import Checkbox from 'components/Checkbox';
-import { transactionSeries } from 'store/transactionSeriesSlice';
+import Button from '../../../components/Button';
+import Checkbox from '../../../components/Checkbox';
+import { transactionSeries } from '../../../store/transactionSeriesSlice';
 import { MenuItemProp } from './DetailContent';
 
 const useStyles = makeStyles((theme) => ({

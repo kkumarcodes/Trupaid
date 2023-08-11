@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from 'components/Typography';
+import Typography from '../../../components/Typography';
 import { Grid } from '@material-ui/core';
 import { MenuItemProp } from './DetailContent';
-import Link from 'components/Link';
+import Link from '../../../components/Link';
 
 export interface Props {
   billAmount: number;

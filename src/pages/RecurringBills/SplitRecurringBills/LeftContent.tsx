@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from 'components/Typography';
+import Typography from '../../../components/Typography';
 import { Grid } from '@material-ui/core';
 import CallSplitIcon from '@material-ui/icons/CallSplit';
 

@@ -7,11 +7,11 @@ import {
   FormControlLabel,
 } from '@material-ui/core';
 import AccordionActions from '@material-ui/core/AccordionActions';
-import CheckBox from 'components/Checkbox';
-import Typography from 'components/Typography';
-import Button from 'components/Button';
-import Link from 'components/Link';
-import { ExpandMoreIcon, ExpandLessIcon } from 'components/Icons';
+import CheckBox from '../Checkbox';
+import Typography from '../Typography';
+import Button from '../Button';
+import Link from '../Link';
+import { ExpandMoreIcon, ExpandLessIcon } from '../Icons';
 import { Grid, Box } from '@material-ui/core';
 import { useState } from 'react';
 
