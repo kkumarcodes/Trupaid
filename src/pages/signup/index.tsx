@@ -2,28 +2,28 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Grid } from '@material-ui/core';
 
-import { createUser, getStatus } from '../../../store/usersSlice';
-import Link from '../../../components/Link';
+import { createUser, getStatus } from '../../store/usersSlice';
+import Link from '../../components/Link';
 
-import Banner from '../../../components/Banner';
-import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import Input from '../../../components/Input';
-import Checkbox from '../../../components/Checkbox';
-import SelectState from '../../../components/SelectState';
+import Banner from '../../components/Banner';
+import OnBoardNavbar from '../../components/OnBoardingNavbar';
+import Input from '../../components/Input';
+import Checkbox from '../../components/Checkbox';
+import SelectState from '../../components/SelectState';
 
-import { CreateUser } from '../../../types/request/user';
+import { CreateUser } from '../../types/request/user';
 import { useTheme, useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '../../../components/Button';
-import Typography from '../../../components/Typography';
-import Container from '../../../components/Container';
+import Button from '../../components/Button';
+import Typography from '../../components/Typography';
+import Container from '../../components/Container';
 
-import onboardingImg from '../../../assets/images/branding/onboarding.png';
-import creditCardImg from '../../../assets/images/branding/creditCard.png';
-import moneyChipImg from '../../../assets/images/branding/moneyChip.png';
-import cartImg from '../../../assets/images/branding/cart.png';
+import onboardingImg from '../../assets/images/branding/onboarding.png';
+import creditCardImg from '../../assets/images/branding/creditCard.png';
+import moneyChipImg from '../../assets/images/branding/moneyChip.png';
+import cartImg from '../../assets/images/branding/cart.png';
 
-import { useAppDispatch } from '../../../hooks/store';
+import { useAppDispatch } from '../../hooks/store';
 
 const infographicSlides = [
   {

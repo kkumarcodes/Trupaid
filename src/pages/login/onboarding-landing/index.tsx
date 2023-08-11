@@ -7,7 +7,7 @@ import { useTheme, useMediaQuery } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '../../../components/Button';
 import Typography from '../../../components/Typography';
-import SocialButton from '../../../pages/Login/OnboardingLanding/SocialButton';
+import SocialButton from '../../../components/Button/SocialButton';
 
 import InfographicLayout from '../../../components/Layouts/InfographicLayout';
 

@@ -29,8 +29,8 @@ import Typography from '../../../components/Typography';
 import CheckBox from '../../../components/Checkbox';
 import Link from '../../../components/Link';
 import Button from '../../../components/Button';
-import RecurringBillAccordion from './RecurringBillAccordion';
-import FormattedInputs from './FormattedInput';
+import RecurringBillAccordion from '../../../components/RecurringBillAccordion';
+import FormattedInputs from '../../../components/Input/FormattedInput';
 import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({

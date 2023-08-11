@@ -10,13 +10,13 @@ import Container from '../../../components/Container';
 import OnBoardNavbar from '../../../components/OnBoardingNavbar';
 import WellPaidAccordion from '../../../components/Accordion';
 import Typography from '../../../components/Typography';
-import LeftContent from './LeftContent';
-import RightContent from './RightContent';
-import DetailContent from './DetailContent';
+import LeftContent from '../../../components/LeftContent';
+import RightContent from '../../../components/RightContent';
+import DetailContent from '../../../components/DetailContent';
 import Button from '../../../components/Button';
 import Checkbox from '../../../components/Checkbox';
 import { transactionSeries } from '../../../store/transactionSeriesSlice';
-import { MenuItemProp } from './DetailContent';
+import { MenuItemProp } from '../../../components/DetailContent';
 
 const useStyles = makeStyles((theme) => ({
   informationContainer: {

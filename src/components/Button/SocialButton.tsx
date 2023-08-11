@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button as MuiButton, ButtonProps } from '@material-ui/core';
-import { MappedPaletteOptions } from '../../../types/theme/createPalette';
+import { MappedPaletteOptions } from '../../types/theme/createPalette';
 
 export interface Props extends Omit<ButtonProps, 'color'> {
   color?: 'black' | 'white';

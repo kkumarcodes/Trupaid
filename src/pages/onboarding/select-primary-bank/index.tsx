@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import BankConfirmation from './BankConfirmation';
+import BankConfirmation from './bank-confirmation';
 
 import Button from '../../../components/Button';
 import Typography from '../../../components/Typography';
