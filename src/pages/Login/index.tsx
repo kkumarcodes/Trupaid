@@ -1,5 +1,4 @@
 import React, {FunctionComponent, useEffect} from 'react';
-import { useHistory } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 
 import InfographicLayout from '../../components/Layouts/InfographicLayout';
@@ -29,8 +28,6 @@ const infographicSlides = [{
 ];
 
 const OnboardingRoutes:FunctionComponent = () => {
-  const history = useHistory();
-
   const Content = <>
     <Button variant="contained" color="primary" onClick={() => {}}>
       Login

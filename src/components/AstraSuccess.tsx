@@ -1,11 +1,10 @@
 import API from '../api';
 import { useState, useEffect } from 'react';
-import { useHistory } from 'react-router';
+import { navigate } from "gatsby";
 import Banner from './Banner';
 
 export default function AstraSuccess() {
   const [error, setError] = useState('');
-  const history = useHistory();
 
   useEffect(() => {
     let url = new URL(window.location.href);
@@ -16,7 +15,7 @@ export default function AstraSuccess() {
       try {
         API.postAstraAuthCode(authCode, redirect_uri).then((res) => {
           console.log('Redirecting...');
-          history.push('/onboarding/connect-bank-account');
+          navigate('/onboarding/connect-bank-account');
         });
       } catch (e) {
         console.log(e);

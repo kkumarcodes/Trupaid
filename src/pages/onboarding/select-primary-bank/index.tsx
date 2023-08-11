@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { navigate } from "gatsby";
 import OnBoardNavbar from '../../../components/OnBoardingNavbar';
 import BankConfirmation from './bank-confirmation';
 
@@ -98,7 +98,6 @@ const SelectPrimaryBank: FunctionComponent = () => {
   const [selectedAccount, setSelectAccount] = useState('');
   const [error, setError] = useState('');
   const [submitLoading, setSubmitLoading] = useState(false);
-  const history = useHistory();
   const dispatch = useAppDispatch();
   const accountStatus = useSelector(getStatus);
   const accounts = useSelector(Accounts);
@@ -149,13 +148,13 @@ const SelectPrimaryBank: FunctionComponent = () => {
       console.log(connections);
       setSubmitLoading(true);
       if (connections.length !== 0) {
-        history.push('/confirm-invitation');
+        navigate('/confirm-invitation');
         return;
       }
 
       if (selectedAccount) await API.createPrimaryAccount(selectedAccount);
       setSubmitLoading(false);
-      history.push('/dashboard');
+      navigate('/dashboard');
     } catch (e) {
       setError(e.message);
       setSubmitLoading(false);

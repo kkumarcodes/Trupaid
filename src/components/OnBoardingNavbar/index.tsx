@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useHistory } from 'react-router-dom';
+import { navigate } from "gatsby";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Grid, useMediaQuery } from '@material-ui/core';
 import {
@@ -113,8 +113,6 @@ const OnBoardNavbar: FC<Props> = (props) => {
 
   const classes = useStyles(props);
   const theme = useTheme();
-  const history = useHistory();
-
   const matchesMdUp = useMediaQuery(theme.breakpoints.up('md'));
   const matchesXsDown = useMediaQuery(theme.breakpoints.down('xs'));
 
@@ -124,7 +122,7 @@ const OnBoardNavbar: FC<Props> = (props) => {
         <Grid container className={classes.mobileLayoutContainer}>
           <Grid item xs={3} className={classes.onBoardingBackIcon2}>
             {backEnabled ? (
-              <span onClick={() => (goBack ? goBack() : history.goBack())}>
+              <span onClick={() => (goBack ? goBack() : navigate(-1))}>
                 <BackArrowIcon />
               </span>
             ) : null}
@@ -155,7 +153,7 @@ const OnBoardNavbar: FC<Props> = (props) => {
           <Grid container alignItems="center" className={classes.titleWrapper}>
             <Grid item container sm={1} className={classes.onBoardingBackIcon}>
               {backEnabled ? (
-                <span onClick={() => (goBack ? goBack() : history.goBack())}>
+                <span onClick={() => (goBack ? goBack() : navigate(-1))}>
                   <BackArrowIcon />
                 </span>
               ) : null}

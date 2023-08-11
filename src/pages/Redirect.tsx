@@ -1,11 +1,5 @@
 import React, {FunctionComponent, useEffect} from 'react';
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory } from "react-router-dom";
-
-import API from '../api';
-
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -17,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Redirect:FunctionComponent = () => {
   const classes = useStyles();
-  const history = useHistory();
 
   useEffect(() => {
     (async() => {

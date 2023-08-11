@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState, useMemo } from 'react';
-import { useHistory } from 'react-router-dom';
+import { navigate } from "gatsby";
 import { Grid } from '@material-ui/core';
 
 import { useAppDispatch } from '../../../hooks/store';
@@ -141,7 +141,6 @@ const FinalConfirmation: FC<Props> = (props) => {
   const { goBack, checked, selected, splitTypeValue, splitAmount, amount } =
     props;
   const dispatch = useAppDispatch();
-  const history = useHistory();
   const [errorMessage, setErrorMessage] = useState('');
   const [showAccordion, setShowAccordion] = useState(false);
   const [changeButton, setChangeButton] = useState(false);
@@ -208,7 +207,7 @@ const FinalConfirmation: FC<Props> = (props) => {
     setBillSplitConfirmed(true);
     console.log('connection data:', connections);
     if (billSplitConfirmed) {
-      history.push('/dashboard');
+      navigate('/dashboard');
     }
   };
 

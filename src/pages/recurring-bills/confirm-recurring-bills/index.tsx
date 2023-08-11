@@ -31,7 +31,6 @@ import Link from '../../../components/Link';
 import Button from '../../../components/Button';
 import RecurringBillAccordion from '../../../components/RecurringBillAccordion';
 import FormattedInputs from '../../../components/Input/FormattedInput';
-import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   recurringBillInstruction: {
@@ -256,7 +255,6 @@ const ConfirmRecurringBills: FunctionComponent<any> = ({
   setChecked,
 }) => {
   const classes = useStyles();
-  const history = useHistory();
   const dispatch = useAppDispatch();
   const recurringTransactions = useSelector(transactionSeries);
 
