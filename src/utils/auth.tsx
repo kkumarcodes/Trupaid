@@ -53,8 +53,6 @@ export const signup = () => {
     return;
   }
 
-  store.dispatch({ type: actionTypes.IS_FROM_EMAIL_SIGNUP, value: true });
-
   auth.authorize({
     "prompt.name": "signup"
   });
