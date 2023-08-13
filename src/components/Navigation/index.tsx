@@ -5,11 +5,13 @@ import {
   IconButton,
   makeStyles,
   Toolbar,
-  useTheme,
+  Typography,
   Menu,
+  Button,
   MenuItem,
 } from '@material-ui/core';
 import clsx from 'clsx';
+import { Link } from 'gatsby';
 
 const drawerWidth = 300;
 
@@ -24,6 +26,19 @@ const Navigation: FunctionComponent = () => {
         [classes.appBarShift]: isPermanent,
       })}>
       <Toolbar className={classes.toolbar}>
+      <Typography variant="h3">TruPaid</Typography>
+        <Button>
+          How It Works
+        </Button>
+        <Button>
+          How It Works
+        </Button>
+        <Button>
+          How It Works
+        </Button>
+        <Button>
+          How It Works
+        </Button>
       </Toolbar>
     </AppBar>
   );

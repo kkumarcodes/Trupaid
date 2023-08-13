@@ -12,31 +12,31 @@ import { login, signup, getProfile } from "../../utils/auth";
 
 import InfographicLayout from '../../components/Layouts/InfographicLayout';
 
-import onboardingImg from '../../assets/images/branding/onboarding.png';
-import creditCardImg from '../../assets/images/branding/creditCard.png';
-import moneyChipImg from '../../assets/images/branding/moneyChip.png';
-import cartImg from '../../assets/images/branding/cart.png';
+import OnboardingImg from '../../assets/images/branding/onboarding.png';
+import CreditCardImg from '../../assets/images/branding/creditCard.png';
+import MoneyChipImg from '../../assets/images/branding/moneyChip.png';
+import CartImg from '../../assets/images/branding/cart.png';
 import AppleIcon from '../../assets/images/others/appleicon.png';
 import GoogleIcon from '../../assets/images/others/googleicon.png';
 
 const infographicSlides = [
   {
-    imgSrc: onboardingImg,
+    imgSrc: OnboardingImg,
     title: 'Welcome to TruPaid',
     info: 'Split bills like rent and electric without effort or reminders.',
   },
   {
-    imgSrc: creditCardImg,
+    imgSrc: CreditCardImg,
     title: 'Financial Hub',
     info: 'Connect your accounts to see balances and all your transactions in one place.',
   },
   {
-    imgSrc: moneyChipImg,
+    imgSrc: MoneyChipImg,
     title: 'Effortless Planning',
     info: "Build an effortless and tailored plan for your monthly finances with help from TruPaid's proprietary algorithm.",
   },
   {
-    imgSrc: cartImg,
+    imgSrc: CartImg,
     title: 'Catered Deals',
     info: 'Find the latest deals on home services in your local area, saving time and money.',
   },
