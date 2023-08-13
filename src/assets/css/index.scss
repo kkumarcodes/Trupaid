@@ -16,6 +16,7 @@ html,
 body,
 #root {
   height: 100%;
+  font-size: 1rem;
 }
 
 .MuiSelect-select.MuiSelect-select {
@@ -36,4 +37,68 @@ body,
 
 .MuiAppBar-colorPrimary {
   color: #3f51b5 !important; 
+}
+
+@media (max-width: 2000px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 5.35rem;
+  }
+  h2 {
+    font-size: 3.33rem;
+  }
+  h3 {
+    font-size: 2.78rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 4.7rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.3rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
 }
