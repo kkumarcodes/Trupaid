@@ -1,0 +1,116 @@
+.main-footer {
+    background-attachment: scroll;
+    background-color: rgb(238, 241, 250);
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    text-align: left;
+
+    h1 {
+        font-size: 2.25rem !important;
+        line-height: 3rem;
+    }
+}
+
+.pricing-box {
+    font-size: 16px;
+    padding: 24px 20px;
+    text-align: center;
+    color: rgb(33, 37, 41);
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 5px 7px 1px;
+    border-radius: 8px;
+    margin: 15px;
+    min-height: 400px;
+
+    h6 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 16px;
+        text-align: left;
+        text-size-adjust: 100%;
+
+        li {
+            font-size: 15px;
+        }
+    }
+}
+
+.MuiGrid-container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.datasection {
+    h2 {
+        font-size: 2.25rem !important;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 2.5rem!important;
+        font-weight: bold;
+    }
+
+    h6 {
+        font-weight: bold;
+    }
+    padding-bottom: 96px;
+    padding-top: 96px;
+    font-size: 1.125rem!important;
+    .datadesc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        padding: 20px;    }
+}
+
+.sectiontop {
+    background-image: url('/images/frametop.svg');
+    background-repeat: no-repeat;
+}
+
+.sectionbottom {
+    background-image: url('/images/framebottom.svg');
+    background-repeat: no-repeat;
+    background-position: bottom!important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nav-button {
+    text-transform: none !important;
+}
+
+.footer2 {
+    a {
+        color: #000000!important;
+        text-decoration: none!important;
+    }
+    h4 {
+        font-size: 1.125rem!important;
+        font-weight: bold;
+    }
+}
