@@ -30,22 +30,20 @@ const Footer: FunctionComponent = () => {
           <Grid item md={3}>
             <p className="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-3xs sw-padding-bottom-none sw-line-height-loose">© 2023 TruPaid Inc.</p>
             <Link target="_blank" to="https://www.facebook.com/trupaidinc" rel="noreferrer">
-              <FacebookIcon />
+              <FacebookIcon style={{ marginRight: '15px' }} />
             </Link>
             <Link target="_blank" to="https://twitter.com/trupaidInc" rel="noreferrer">
-              <TwitterIcon />
+              <TwitterIcon style={{ marginRight: '15px' }} />
             </Link>
             <Link target="_blank" to="https://www.instagram.com/trupaidinc/" rel="noreferrer">
-              <InstagramIcon />
+              <InstagramIcon style={{ marginRight: '15px' }} />
             </Link>
             <Link target="_blank" to="https://www.linkedin.com/company/trupaid/" rel="noreferrer">
-              <LinkedInIcon />
+              <LinkedInIcon style={{ marginRight: '15px' }} />
             </Link>
 
           </Grid>
-        </Grid>
 
-        <Grid container>
           <Grid item md={3} className={classes.links}>
             <h4 >Product</h4>
             <Link target="" className="" to="/how-it-works">How it works</Link>
