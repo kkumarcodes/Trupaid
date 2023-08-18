@@ -29,6 +29,27 @@ body,
   padding-left: 15px;
 }
 
+.m-15 {
+  margin: 15px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-30 {
+  padding: 30px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-100 {
+  width: 100%;
+}
 @media (max-width: 600px) {
   #root {
     height: unset !important;

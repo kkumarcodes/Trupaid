@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core';
 import clsx from 'clsx';
 import { Link } from 'gatsby';
+import Logo from '../../assets/images/others/logo.svg';
 
 const drawerWidth = 300;
 
@@ -26,19 +27,17 @@ const Navigation: FunctionComponent = () => {
         [classes.appBarShift]: isPermanent,
       })}>
       <Toolbar className={classes.toolbar}>
-      <Typography variant="h3">TruPaid</Typography>
+      <img src={Logo} alt="logo" className="" style={{height: '45px'}}/>
+        
+        <div className='nav-button'>
         <Button>
           How It Works
         </Button>
         <Button>
-          How It Works
+          New Services
         </Button>
-        <Button>
-          How It Works
-        </Button>
-        <Button>
-          How It Works
-        </Button>
+        </div>
+        
       </Toolbar>
     </AppBar>
   );
