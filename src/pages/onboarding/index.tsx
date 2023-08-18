@@ -1,21 +1,21 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { navigate } from "gatsby";
-import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import BankConfirmation from '../../../components/bank-confirmation';
+import OnBoardNavbar from '../../components/OnBoardingNavbar';
+import BankConfirmation from '../../components/bank-confirmation';
 
-import Button from '../../../components/Button';
-import Typography from '../../../components/Typography';
+import Button from '../../components/Button';
+import Typography from '../../components/Typography';
 
-import API from '../../../api';
-import { useAppDispatch } from '../../../hooks/store';
+import API from '../../api';
+import { useAppDispatch } from '../../hooks/store';
 import { connect, useSelector } from 'react-redux';
-import { Accounts, getStatus, getAccounts } from '../../../store/accountsSlice';
-import { getConnections, Connections } from '../../../store/connectionSlice';
+import { Accounts, getStatus, getAccounts } from '../../store/accountsSlice';
+import { getConnections, Connections } from '../../store/connectionSlice';
 
-import bankImg from '../../../assets/images/branding/bankImg.png';
-import bankAvartar from '../../../assets/images/profile/bank_avatar.png';
-import Banner from '../../../components/Banner';
-import Container from '../../../components/Container';
+import bankImg from '../../assets/images/branding/bankImg.png';
+import bankAvartar from '../../assets/images/profile/bank_avatar.png';
+import Banner from '../../components/Banner';
+import Container from '../../components/Container';
 
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
