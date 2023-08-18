@@ -1,8 +1,8 @@
 import React, { FC, useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import ConfirmRecurringBills from './confirm-recurring-bills';
-import SplitRecurringBills from './split-recurring-bills';
-import FinalConfirmation from './final-confirmation';
+import ConfirmRecurringBills from '../../components/confirm-recurring-bills';
+import SplitRecurringBills from '../../components/split-recurring-bills';
+import FinalConfirmation from '../../components/final-confirmation';
 import { transactionSeries } from '../../store/transactionSeriesSlice';
 
 interface Props {}
