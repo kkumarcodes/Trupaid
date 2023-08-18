@@ -2,27 +2,27 @@ import React, { FC, useEffect, useState, useMemo } from 'react';
 import { navigate } from "gatsby";
 import { Grid } from '@material-ui/core';
 
-import { useAppDispatch } from '../../../hooks/store';
+import { useAppDispatch } from '../../hooks/store';
 
-import Banner from '../../../components/Banner';
-import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import LeftContent from '../../../components/BillSplitAccordion/LeftContent';
+import Banner from '../Banner';
+import OnBoardNavbar from '../OnBoardingNavbar';
+import LeftContent from '../BillSplitAccordion/LeftContent';
 
-import Details from '../../../components/BillSplitAccordion/Details';
+import Details from '../BillSplitAccordion/Details';
 
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '../../../components/Button';
-import Typography from '../../../components/Typography';
+import Button from '../Button';
+import Typography from '../Typography';
 
 // use redux-toolkit part
 import { connect, useSelector } from 'react-redux';
-import { getConnections, Connections } from '../../../store/connectionSlice';
-import { transactionSeries } from '../../../store/transactionSeriesSlice';
+import { getConnections, Connections } from '../../store/connectionSlice';
+import { transactionSeries } from '../../store/transactionSeriesSlice';
 
-import avatarImg from '../../../assets/images/profile/avatar.png';
-import BillSplitAccordion from '../../../components/BillSplitAccordion';
+import avatarImg from '../../assets/images/profile/avatar.png';
+import BillSplitAccordion from '../BillSplitAccordion';
 
-import Container from '../../../components/Container';
+import Container from '../Container';
 
 const useStyles = makeStyles((theme) => ({
   content: {

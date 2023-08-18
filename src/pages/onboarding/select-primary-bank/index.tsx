@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { navigate } from "gatsby";
 import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import BankConfirmation from './bank-confirmation';
+import BankConfirmation from '../../../components/bank-confirmation';
 
 import Button from '../../../components/Button';
 import Typography from '../../../components/Typography';

@@ -9,13 +9,13 @@ import { useSelector } from 'react-redux';
 import {
   getTransactionSeries,
   transactionSeries,
-} from '../../../store/transactionSeriesSlice';
-import { useAppDispatch } from '../../../hooks/store';
+} from '../../store/transactionSeriesSlice';
+import { useAppDispatch } from '../../hooks/store';
 import { DateTime } from 'luxon';
 
-import RecurringBillLogo from '../../../assets/images/others/recurringBillLogo.svg';
-import RecurringBillRect1 from '../../../assets/images/others/recurringBillRect1.png';
-import RecurringBillRect3 from '../../../assets/images/others/recurringBillRect3.png';
+import RecurringBillLogo from '../../assets/images/others/recurringBillLogo.svg';
+import RecurringBillRect1 from '../../assets/images/others/recurringBillRect1.png';
+import RecurringBillRect3 from '../../assets/images/others/recurringBillRect3.png';
 
 import CallSplitIcon from '@material-ui/icons/CallSplit';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
@@ -23,14 +23,14 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import OnBoardNavbar from '../../../components/OnBoardingNavbar';
-import Container from '../../../components/Container';
-import Typography from '../../../components/Typography';
-import CheckBox from '../../../components/Checkbox';
-import Link from '../../../components/Link';
-import Button from '../../../components/Button';
-import RecurringBillAccordion from '../../../components/RecurringBillAccordion';
-import FormattedInputs from '../../../components/Input/FormattedInput';
+import OnBoardNavbar from '../OnBoardingNavbar';
+import Container from '../Container';
+import Typography from '../Typography';
+import CheckBox from '../Checkbox';
+import Link from '../Link';
+import Button from '../Button';
+import RecurringBillAccordion from '../RecurringBillAccordion';
+import FormattedInputs from '../Input/FormattedInput';
 
 const useStyles = makeStyles((theme) => ({
   recurringBillInstruction: {
