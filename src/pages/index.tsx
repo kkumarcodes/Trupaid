@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent } from 'react';
 import {
   Card,
   Grid,
@@ -17,6 +17,7 @@ import Landlords from '../assets/images/others/Landlords.svg';
 import Mainlaptop from '../assets/images/others/mainlaptop.png';
 
 import CheckIcon from '@material-ui/icons/Check';
+import { navigate } from 'gatsby';
 
 const index: FunctionComponent = () => {
   return (
@@ -31,7 +32,7 @@ const index: FunctionComponent = () => {
             <div className='p-30'>
               Living with others means sharing bills. Skip the monthly mess by tracking bills together. Settle the tab how you want: all at once or with auto-transfers. Easy.
             </div>
-            <Button>
+            <Button onClick={() => navigate('/login')}>
               Get TruPaid
             </Button>
             <img src={Mainlaptop} alt="logo" className="w-100" />
@@ -199,7 +200,7 @@ const index: FunctionComponent = () => {
                 <li><CheckIcon style={{ fontSize: 14, color: '#33428e', marginRight: '15px', marginTop: '8px' }} />Quick split one-time charges</li>
                 <li><CheckIcon style={{ fontSize: 14, color: '#33428e', marginRight: '15px', marginTop: '8px' }} />Set simple recurring transfers</li>
               </ul>
-              <Button>Get TruPaid</Button>
+              <Button onClick={() => navigate('/login')}>Get TruPaid</Button>
             </div>
           </div>
         </Grid>
@@ -215,7 +216,7 @@ const index: FunctionComponent = () => {
                 <li><CheckIcon style={{ fontSize: 14, color: '#33428e', marginRight: '15px', marginTop: '8px' }} />Advanced transfer routines</li>
                 <li> <CheckIcon style={{ fontSize: 14, color: '#33428e', marginRight: '15px', marginTop: '8px' }} />Track your share of group bills</li>
               </ul>
-              <Button>Get TruPaid</Button>
+              <Button onClick={() => navigate('/login')}>Get TruPaid</Button>
             </div>
           </div>
         </Grid>
@@ -234,7 +235,7 @@ const index: FunctionComponent = () => {
                 <p className="">
                 </p>
                 <div className="d-flex justify-content-center flex-wrap">
-                  <Button>
+                  <Button onClick={() => navigate('/login')}>
                     Get TruPaid
                   </Button>
                 </div>
