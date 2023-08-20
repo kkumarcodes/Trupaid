@@ -11,7 +11,7 @@ import {
   MenuItem,
 } from '@material-ui/core';
 import clsx from 'clsx';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Logo from '../../assets/images/others/logo.svg';
 
 const drawerWidth = 300;
@@ -27,14 +27,14 @@ const Navigation: FunctionComponent = () => {
         [classes.appBarShift]: isPermanent,
       })}>
       <Toolbar className={classes.toolbar}>
-      <img src={Logo} alt="logo" className="" style={{height: '45px'}}/>
+      <img src={Logo} alt="logo" className="" style={{height: '45px'}} onClick={() => navigate('/')}/>
         
         <div className='nav-button'>
-        <Button>
+        <Button onClick={() => navigate('/how-it-works')}>
           How It Works
         </Button>
-        <Button>
-          New Services
+        <Button onClick={() => navigate('/')}>
+          Price
         </Button>
         </div>
         

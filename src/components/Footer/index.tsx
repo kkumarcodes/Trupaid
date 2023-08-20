@@ -53,7 +53,7 @@ const Footer: FunctionComponent = () => {
           <Grid item md={3} className={classes.links}>
             <h4 >Other Services</h4>
             <Link target="_blank" className="" to="/services">Services</Link>
-            <Link target="" className="" to="https://blog.gettrupaid.com/">Blog</Link>
+            <Link target="" className="" to="/blogs">Blog</Link>
             <Link target="" className="" to="/partners">Partners</Link>
           </Grid>
           <Grid item md={3} className={classes.links}>
