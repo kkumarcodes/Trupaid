@@ -12,144 +12,12 @@ import Checkbox from '../../components/Checkbox';
 import SelectState from '../../components/SelectState';
 
 import { CreateUser } from '../../types/request/user';
-import { useTheme, useMediaQuery } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+
 import Button from '../../components/Button';
 import Typography from '../../components/Typography';
 import Container from '../../components/Container';
-
-import onboardingImg from '../../assets/images/branding/onboarding.png';
-import creditCardImg from '../../assets/images/branding/creditCard.png';
-import moneyChipImg from '../../assets/images/branding/moneyChip.png';
-import cartImg from '../../assets/images/branding/cart.png';
-
 import { useAppDispatch } from '../../hooks/store';
-
-const infographicSlides = [
-  {
-    imgSrc: onboardingImg,
-    title: 'Welcome to TruPaid',
-    info: 'Split bills like rent and electric without effort or reminders.',
-  },
-  {
-    imgSrc: creditCardImg,
-    title: 'Financial Hub',
-    info: 'Connect your accounts to see balances and all your transactions in one place.',
-  },
-  {
-    imgSrc: moneyChipImg,
-    title: 'Effortless Planning',
-    info: "Build an effortless and tailored plan for your monthly finances with help from TruPaid's proprietary algorithm.",
-  },
-  {
-    imgSrc: cartImg,
-    title: 'Catered Deals',
-    info: 'Find the latest deals on home services in your local area, saving time and money.',
-  },
-];
-
-const column = [
-  { header: 'Description', columnValue: 'description' },
-  { header: 'Frequency', columnValue: 'frequency' },
-  { header: 'Your Share', columnValue: 'your_share' },
-  { header: 'Amount', columnValue: 'amount' },
-];
-
-const userData = [
-  {
-    description: ['HBO Go', 'Next: Apr 27th'],
-    frequency: 'Monthly',
-    share: '33%',
-    amount: '10.00',
-  },
-  {
-    description: ['Rent', 'Next: Apr 28th'],
-    frequency: 'Monthly',
-    share: '50%',
-    amount: '1,500.00',
-  },
-];
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: 'unset',
-  },
-  content: {
-    width: '100%',
-  },
-  signUpText: {
-    paddingLeft: '20px',
-    [theme.breakpoints.down('xs')]: {
-      marginTop: '40px',
-      textAlign: 'center',
-    },
-  },
-  legalText: {
-    fontSize: '14px',
-  },
-  legalContainer: {
-    marginTop: '20px',
-  },
-  checkBox: {
-    paddingLeft: '0px',
-    transform: 'translateY(-9px)',
-  },
-  formContainer: {
-    width: '100%',
-    margin: 'auto',
-    marginTop: '40px',
-    msOverflowStyle: 'none',
-    scrollbarWidth: 'none',
-    '&::-webkit-scrollbar': {
-      display: 'none',
-    },
-    '&:hover::-webkit-scrollbar': {
-      width: '5px',
-      height: '8px',
-      backgroundColor: '#eeeeee',
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxHeight: 'unset',
-    },
-    [theme.breakpoints.down('xs')]: {
-      marginTop: '0px !important',
-    },
-  },
-  signUpButtonContainer: {
-    marginTop: '40px',
-  },
-  customFormGridLeftPadding: {
-    paddingLeft: '0px !important',
-    paddingTop: '25px !important',
-    paddingBottom: '0px !important',
-    position: 'relative',
-    [theme.breakpoints.down('xs')]: {
-      paddingRight: '0px !important',
-    },
-  },
-  customFormGridRightPadding: {
-    paddingRight: '0px !important',
-    paddingTop: '25px !important',
-    paddingBottom: '0px !important',
-    position: 'relative',
-    [theme.breakpoints.down('xs')]: {
-      paddingLeft: '0px !important',
-    },
-  },
-  customFormGridNoPadding: {
-    paddingRight: '0px !important',
-    paddingLeft: '0px !important',
-    paddingTop: '25px !important',
-    paddingBottom: '0px !important',
-    position: 'relative',
-  },
-  signUpButton: {
-    paddingRight: '20px',
-    [theme.breakpoints.down('xs')]: {
-      paddingRight: 0,
-    },
-  },
-}));
+import { useStyles } from './styles';
 
 const initialForm: CreateUser = {
   phoneNumber: '',
@@ -170,7 +38,6 @@ const OnboardingRoutes: FunctionComponent = () => {
   const dispatch = useAppDispatch();
   const [error, setError] = useState(false);
   const classes = useStyles();
-  const theme = useTheme();
 
   const userStatus = useSelector(getStatus);
 
@@ -317,7 +184,6 @@ const OnboardingRoutes: FunctionComponent = () => {
               fullWidth={true}
               inputLabel="Email Address"
               disableUnderline={true}
-              value={user.email}
             />
           </Grid>
           <Grid
