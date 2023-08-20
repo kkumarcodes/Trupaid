@@ -8,7 +8,7 @@ import Typography from '../../components/Typography';
 
 import API from '../../api';
 import { useAppDispatch } from '../../hooks/store';
-import { connect, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Accounts, getStatus, getAccounts } from '../../store/accountsSlice';
 import { getConnections, Connections } from '../../store/connectionSlice';
 
