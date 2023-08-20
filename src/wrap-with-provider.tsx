@@ -38,13 +38,13 @@ const WrapProvider = ({ element }: any) => {
   return (
     <CssBaseline>
       <React.StrictMode>
-        <SessionCheck>
-          <Provider store={store} >
-              <ThemeProvider theme={AppTheme}>
-                {element}
-              </ThemeProvider>
-          </Provider>
-        </SessionCheck>
+        <Provider store={store} >
+          <SessionCheck>
+            <ThemeProvider theme={AppTheme}>
+              {element}
+            </ThemeProvider>
+          </SessionCheck>
+        </Provider>
       </React.StrictMode>
     </CssBaseline>
   );

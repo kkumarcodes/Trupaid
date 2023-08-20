@@ -21,7 +21,7 @@ const tokens = {
   expiresAt: false,
 };
 
-let user = null;
+let user: any = null;
 
 export const isAuthenticated = () => {
   if (!isBrowser) {
@@ -73,11 +73,6 @@ const setSession =
         tokens.idToken = authResult.idToken;
         tokens.expiresAt = expiresAt;
         user = authResult.idTokenPayload;    
-
-        store.dispatch({ type: actionTypes.UPDATE_AUTH_USER, value: user })
-        store.dispatch({ type: actionTypes.UPDATE_ACCESS_TOKEN, value: authResult.accessToken })
-        store.dispatch({ type: actionTypes.GET_PROFILE })
-        store.dispatch({ type: actionTypes.UPDATE_IS_LOGGED_IN, value: true })
         cb();
         // store.dispatch({ type: actionTypes.UPDATE_LOGGING_IN })
       }
