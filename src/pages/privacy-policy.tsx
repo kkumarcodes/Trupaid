@@ -3,20 +3,8 @@ import {
   Card,
   Grid,
 } from '@material-ui/core';
-import Button from '../components/Button';
 import Layout from "../components/Layout";
-import Link from "../components/Link";
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-import Faq from '../assets/images/others/faq.gif';
-
-import CheckIcon from '@material-ui/icons/Check';
-
-const Help = () => {
+const PrivatePolicy: FunctionComponent = () => {
   return (
     <Layout>
       <section className=''>
@@ -38,7 +26,7 @@ const Help = () => {
               <Grid item md={2} className=""></Grid>
               <Grid item md={8} className="">
 
-                <div class="ql-editor"><h2>Privacy Policy</h2><p><br />
+                <div className="ql-editor"><h2>Privacy Policy</h2><p><br />
                 </p><p><span >TruPaid takes your information privacy and security extremely seriously.</span></p><p><br />
                   </p><p><span >Well Paid operates and is only successful by earning your trust. To earn that trust, we carefully guard and restrict the usage of your data. In plain terms, that means we DO NOT send your personal information or information that can directly be tagged to you to anyone without your explicit permission. Further, we use advanced 256-bit encryption to encrypt any personal or financial information shared with us. In short, your information security and privacy is built into TruPaid’s core.</span></p><p><br />
                   </p><p><span >If you have any questions or concerns regarding our Privacy Policy or practices, please contact us at help@gettrupaid.com and we would be happy to help.</span></p><p><br />
@@ -100,4 +88,4 @@ const Help = () => {
   );
 };
 
-export default Help;
+export default PrivatePolicy;

@@ -42,120 +42,6 @@ const infographicSlides = [
   },
 ];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: 'unset',
-  },
-  content: {
-    width: '100%',
-  },
-  onBoardingTitleWrapper: {
-    paddingBottom: '0px !important',
-    marginTop: '36px',
-    [theme.breakpoints.down('md')]: {
-      textAlign: 'center',
-      margin: 'auto',
-    },
-  },
-  formContainer: {
-    width: '100%',
-    maxWidth: '580px',
-    margin: 'auto',
-    paddingBottom: '85px',
-    [theme.breakpoints.down('md')]: {
-      maxWidth: '680px',
-      textAlign: 'center',
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxHeight: 'unset',
-    },
-  },
-  optionDividerWrapper: {
-    display: 'flex',
-    marginTop: '6px',
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '27px',
-      marginBottom: '27px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      display: 'none',
-    },
-  },
-  optionDivider: {
-    borderTop: '1px solid #d8d8d8',
-    width: '100%',
-    height: '20px',
-    marginTop: '11px',
-  },
-  signUpButton: {
-    marginRight: '9px',
-    [theme.breakpoints.down('md')]: {
-      marginRight: 0,
-      paddingRight: '20px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '15px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      paddingRight: 0,
-      marginBottom: '20px',
-      marginTop: 0,
-    },
-  },
-  loginButton: {
-    [theme.breakpoints.down('md')]: {
-      paddingLeft: '20px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '15px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      marginTop: 0,
-      paddingLeft: 0,
-    },
-  },
-  buttonPaddingLeft: {
-    paddingLeft: '8px',
-    [theme.breakpoints.down('sm')]: {
-      paddingLeft: 0,
-    },
-  },
-  buttonPaddingRight: {
-    paddingRight: '8px',
-    [theme.breakpoints.down('sm')]: {
-      paddingRight: 0,
-      marginBottom: '25px',
-    },
-  },
-  noteWrapper: {
-    marginTop: '16px',
-  },
-  mobileDividerOne: {
-    width: '45.3%',
-  },
-  mobileDividerMiddle: {
-    width: '9.4%',
-  },
-  buttonWrapper: {
-    [theme.breakpoints.down('md')]: {
-      justifyContent: 'center',
-    },
-  },
-  titlePart1: {
-    fontSize: '21px',
-    fontWeight: 900,
-    lineHeight: '28px',
-    fontFamily: 'Playfair Display',
-    marginTop: '65px',
-  },
-  titlePart2: {
-    fontSize: '34px',
-    fontWeight: 900,
-    lineHeight: '45px',
-    fontFamily: 'Playfair Display',
-  },
-}));
-
 const MobileTitleContent: FunctionComponent = () => {
   const classes = useStyles();
 
@@ -171,7 +57,7 @@ const MobileTitleContent: FunctionComponent = () => {
   );
 };
 
-const OnBoardingLanding: FunctionComponent = () => {
+const Login: FunctionComponent = () => {
   const classes = useStyles();
   const theme = useTheme();
   const matchesSmDown = useMediaQuery(theme.breakpoints.down('sm'));
@@ -329,4 +215,119 @@ const OnBoardingLanding: FunctionComponent = () => {
   );
 };
 
-export default OnBoardingLanding;
+export default Login;
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    height: 'unset',
+  },
+  content: {
+    width: '100%',
+  },
+  onBoardingTitleWrapper: {
+    paddingBottom: '0px !important',
+    marginTop: '36px',
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
+      margin: 'auto',
+    },
+  },
+  formContainer: {
+    width: '100%',
+    maxWidth: '580px',
+    margin: 'auto',
+    paddingBottom: '85px',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '680px',
+      textAlign: 'center',
+    },
+    [theme.breakpoints.down('sm')]: {
+      maxHeight: 'unset',
+    },
+  },
+  optionDividerWrapper: {
+    display: 'flex',
+    marginTop: '6px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '27px',
+      marginBottom: '27px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+    },
+  },
+  optionDivider: {
+    borderTop: '1px solid #d8d8d8',
+    width: '100%',
+    height: '20px',
+    marginTop: '11px',
+  },
+  signUpButton: {
+    marginRight: '9px',
+    [theme.breakpoints.down('md')]: {
+      marginRight: 0,
+      paddingRight: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '15px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      paddingRight: 0,
+      marginBottom: '20px',
+      marginTop: 0,
+    },
+  },
+  loginButton: {
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '15px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 0,
+      paddingLeft: 0,
+    },
+  },
+  buttonPaddingLeft: {
+    paddingLeft: '8px',
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: 0,
+    },
+  },
+  buttonPaddingRight: {
+    paddingRight: '8px',
+    [theme.breakpoints.down('sm')]: {
+      paddingRight: 0,
+      marginBottom: '25px',
+    },
+  },
+  noteWrapper: {
+    marginTop: '16px',
+  },
+  mobileDividerOne: {
+    width: '45.3%',
+  },
+  mobileDividerMiddle: {
+    width: '9.4%',
+  },
+  buttonWrapper: {
+    [theme.breakpoints.down('md')]: {
+      justifyContent: 'center',
+    },
+  },
+  titlePart1: {
+    fontSize: '21px',
+    fontWeight: 900,
+    lineHeight: '28px',
+    fontFamily: 'Playfair Display',
+    marginTop: '65px',
+  },
+  titlePart2: {
+    fontSize: '34px',
+    fontWeight: 900,
+    lineHeight: '45px',
+    fontFamily: 'Playfair Display',
+  },
+}));

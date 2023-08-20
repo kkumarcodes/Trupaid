@@ -1,25 +1,16 @@
 import React, { FunctionComponent, useState } from 'react';
 import {
-  Card,
   Grid,
 } from '@material-ui/core';
 import Button from '../components/Button';
 import Layout from "../components/Layout";
-import Link from "../components/Link";
 import Automate from '../assets/images/others/Automate bank transfers.svg';
 import together from '../assets/images/others/Keep it together.svg';
 import bills from '../assets/images/others/Share house bills.svg';
 
-import Roommates from '../assets/images/others/Roommates.svg';
-import Couples from '../assets/images/others/Couples.svg';
-import Coparents from '../assets/images/others/Coparents.svg';
-import Landlords from '../assets/images/others/Landlords.svg';
-
 import Launch from '../assets/images/others/launch.svg';
 
-import CheckIcon from '@material-ui/icons/Check';
-
-const HowItWorks = () => {
+const HowItWorks: FunctionComponent = () => {
   return (
     <Layout>
       <section className='sectionbottom datasection text-center'>

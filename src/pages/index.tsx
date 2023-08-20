@@ -5,7 +5,6 @@ import {
 } from '@material-ui/core';
 import Button from '../components/Button';
 import Layout from "../components/Layout";
-import Link from "../components/Link";
 import Automate from '../assets/images/others/Automate bank transfers.svg';
 import together from '../assets/images/others/Keep it together.svg';
 import bills from '../assets/images/others/Share house bills.svg';
@@ -19,7 +18,7 @@ import Mainlaptop from '../assets/images/others/mainlaptop.png';
 
 import CheckIcon from '@material-ui/icons/Check';
 
-const index = () => {
+const index: FunctionComponent = () => {
   return (
     <Layout>
       <section className='sectionbottom datasection text-center'>

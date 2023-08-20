@@ -1,11 +1,9 @@
 import React, { FunctionComponent, useState } from 'react';
 import {
-  Card,
   Grid,
 } from '@material-ui/core';
 import Button from '../components/Button';
 import Layout from "../components/Layout";
-import Link from "../components/Link";
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -14,9 +12,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import Faq from '../assets/images/others/faq.gif';
 
-import CheckIcon from '@material-ui/icons/Check';
-
-const Help = () => {
+const Help: FunctionComponent = () => {
   return (
     <Layout>
       <section className=' datasection text-center'>
